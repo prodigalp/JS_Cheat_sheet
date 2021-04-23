@@ -34,8 +34,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <button type="button">Send</button>
-                                <button type="button">Clear</button>
+                                <button type="button" onclick="transfer()">Send</button>
+                                <button type="button" onclick="cleared()">Clear</button>
                             </td>
                         </tr>
                     </table>
@@ -43,6 +43,15 @@
             </div>
         </div>
     </div>
+    <script>
+        function transfer() {
+            alert('transfer test');
+        }
+
+        function cleared() {
+            alert('clear test');
+        }
+    </script>
 </body>
 
 </html>
