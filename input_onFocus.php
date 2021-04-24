@@ -21,15 +21,15 @@
                             <td>Output</td>
                         </tr>
                         <tr>
-                            <td id="in1st"><input onclick="colorYel(1)" onmouseout="colorWhi(1)" type="text" name="txt1" id="txt1" placeholder="Enter 1st number"></td>
+                            <td id="in1st"><input onmouseover="colorYel(1)" onmouseout="colorWhi(1)" type="text" name="txt1" id="txt1" placeholder="Enter 1st number"></td>
                             <td id="out1st"></td>
                         </tr>
                         <tr>
-                            <td id="in2nd"><input onclick="colorYel(2)" onmouseout="colorWhi(2)" type="text" name="txt2" id="txt2" placeholder="Enter 2nd number"></td>
+                            <td id="in2nd"><input onmouseover="colorYel(2)" onmouseout="colorWhi(2)" type="text" name="txt2" id="txt2" placeholder="Enter 2nd number"></td>
                             <td id="out2nd"></td>
                         </tr>
                         <tr>
-                            <td id="in3rd"><input onclick="colorYel(3)" onmouseout="colorWhi(3)" type="text" name="txt3" id="txt3" placeholder="Enter 3rd number"></td>
+                            <td id="in3rd"><input onmouseover="colorYel(3)" onmouseout="colorWhi(3)" type="text" name="txt3" id="txt3" placeholder="Enter 3rd number"></td>
                             <td id="out3rd"></td>
                         </tr>
                         <tr>
@@ -46,9 +46,9 @@
     <script>
         // Copy data to output table
         function transfer() {
-            document.getElementById('out1st').innerHTML = document.getElementById('txt1st').value;
-            document.getElementById('out2nd').innerHTML = document.getElementById('txt2nd').value;
-            document.getElementById('out3rd').innerHTML = document.getElementById('txt3rd').value;
+            document.getElementById('out1st').innerHTML = document.getElementById('txt1').value;
+            document.getElementById('out2nd').innerHTML = document.getElementById('txt2').value;
+            document.getElementById('out3rd').innerHTML = document.getElementById('txt3').value;
         }
 
         // clear screen
@@ -57,9 +57,9 @@
             document.getElementById('out2nd').innerHTML = '';
             document.getElementById('out3rd').innerHTML = '';
 
-            document.getElementById('txt1st').value = '';
-            document.getElementById('txt2nd').value = '';
-            document.getElementById('txt3rd').value = '';
+            document.getElementById('txt1').value = '';
+            document.getElementById('txt2').value = '';
+            document.getElementById('txt3').value = '';
         }
 
         // Yellow
