@@ -90,7 +90,7 @@
 <body>
     <div id="wrapper">
         <form action="#" method="POST">
-            <section class="tableBox">
+            <section class="tableBox" style="overflow-x: auto">
                 <table>
                     <caption>NOTE: Please click on the table to choose!</caption>
                     <tr>

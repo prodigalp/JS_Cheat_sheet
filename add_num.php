@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="widthd=device-width, initial-scale=1.0">
     <title>Add Ups</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <button type="button" onclick="document.getElementById('ans').innerHTML = 5 + 19">Compute</button>
     <button type="button" onclick="document.getElementById('ans').innerHTML =''">Clear</button>
 
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
 </body>
 
 </html>
