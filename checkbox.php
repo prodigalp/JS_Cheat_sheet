@@ -9,15 +9,14 @@
 </head>
 
 <body>
-    <form action="#" method="POST">
+    <form action="#" method="POST" name="fruitStand">
         <h2>Fruit Selections</h2>
         <h3>Check the fruits that you like.</h3>
-        <input type="checkbox" name="name[]" id="fruit1" value="Guava">Guava<br>
-        <input type="checkbox" name="name[]" id="fruit2" value="Papaya">Papaya<br>
-        <input type="checkbox" name="name[]" id="fruit3" value="Manggo">Manggo<br>
-        <input type="checkbox" name="name[]" id="fruit4" value="Apple">Apple</br>
-        <input type="checkbox" name="name[]" id="fruit5" value="Grapes">Grapes<br><br>
-        <button type="button" onclick="fruitStand()">Submit</button>
+        <input type="checkbox" name="name[]" id="fruit1" onclick="fruitStand(1, 'Guava')">Guava<br>
+        <input type="checkbox" name="name[]" id="fruit2" onclick="fruitStand(2, 'Papaya')">Papaya<br>
+        <input type="checkbox" name="name[]" id="fruit3" onclick="fruitStand(3, 'Apple')">Apple<br>
+        <input type="checkbox" name="name[]" id="fruit4" onclick="fruitStand(4, 'Manggo')">Manggo</br>
+        <input type="checkbox" name="name[]" id="fruit5" onclick="fruitStand(5, 'Grapes')">Grapes<br><br>
 
         <p id="result1"></p>
         <p id="result2"></p>
@@ -26,28 +25,14 @@
         <p id="result5"></p>
     </form>
     <script>
-        function fruitStand() {
-            if (document.getElementById('fruit1').checked == true) {
-                document.getElementById('result1').innerHTML = 'Guava';
-            }
-            if (document.getElementById('fruit2').checked == true) {
-                document.getElementById('result2').innerHTML = 'Papaya';
-            }
-            if (document.getElementById('fruit3').checked == true) {
-                document.getElementById('result3').innerHTML = 'Manggo';
-            }
-            if (document.getElementById('fruit4').checked == true) {
-                document.getElementById('result4').innerHTML = 'Apple';
-            }
-            if (document.getElementById('fruit5').checked == true) {
-                document.getElementById('result5').innerHTML = 'Grapes';
-            }
-            // let a = document.getElementById('fruit1').value;
-            // let b = document.getElementById('fruit2').value;
-            // let c = document.getElementById('fruit3').value;
-            // let d = document.getElementById('fruit4').value;
-            // let e = document.getElementById('fruit5').value;
+        // Check if Fruit is selected and display name of the fruit
+        function fruitStand(num, fruit) {
 
+            if (document.getElementById('fruit' + num).checked == true) {
+                document.getElementById('result' + num).innerHTML = fruit;
+            } else {
+                document.getElementById('result' + num).innerHTML = '';
+            }
         }
     </script>
 </body>

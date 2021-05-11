@@ -69,7 +69,8 @@
                 ans = parseInt(x) + parseInt(y);
                 displayAns(ans);
             } else if (optr == 'sub') {
-                ans = parseInt(x) = parseInt(y);
+                console.log(optr);
+                ans = parseInt(x) - parseInt(y);
                 displayAns(ans);
             }
         }

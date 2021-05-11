@@ -150,7 +150,6 @@
             document.getElementById('txtPreFin').value = '';
             document.getElementById('txtFin').value = '';
             document.getElementById('txtAve').value = '';
-
         }
     </script>
 

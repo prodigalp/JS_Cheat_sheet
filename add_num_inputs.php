@@ -15,18 +15,18 @@
             <form action="#">
                 <div class="">
                     <label for="num1">First:</label>
-                    <input type="number" name="num1" id="num1" placeholder="Enter 1st Number">
+                    <input type="number" name="num1" id="num1" placeholder="Enter 1st Number" value="5">
                 </div>
                 <div class="">
                     <label for="num2">Second</label>
-                    <input type="number" name="num2" id="num2" placeholder="Enter 2nd Number">
+                    <input type="number" name="num2" id="num2" placeholder="Enter 2nd Number" value="5">
                 </div>
                 <div class="ans">
                     <label for="sum">Answer:</label>
                     <input type="number" name="sumup" id="sumup" placeholder="Answer">
                 </div>
                 <div class="btns">
-                    <button type="button" onclick="document.getElementById('sumup').innerHTML = 5 + 5">Compute</button>
+                    <button type="button" onclick="document.getElementById('sumup').value = 5 + 5">Compute</button>
                 </div>
             </form>
 

@@ -109,7 +109,6 @@
             if (x == 'mul') {
                 ans = a * b;
                 processMath(ans);
-
             } else if (x == 'div') {
                 ans = a / b;
                 processMath(ans);

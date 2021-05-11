@@ -96,10 +96,6 @@
             border-radius: 10px;
         }
 
-        input[type="radio"] {
-            padding: 10px;
-        }
-
         .apprelQuantity {
             /* background: lightslategray; */
             padding: 10px;
@@ -208,8 +204,6 @@
                 } else if (apparel.size[1].checked == true) { // Mediuam size
                     let payment = (priceTag * priceQty) + 100;
                     checkDis(payment);
-                    console.log(payment);
-
                 } else if (apparel.size[2].checked == true) { // Large size
                     let payment = (priceTag * priceQty) + 200;
                     checkDis(payment);
@@ -218,7 +212,6 @@
                 }
             }
         }
-
         // Check for discounted price
         function checkDis(discount) {
             if (document.apparel.txtDis.checked == true) {
